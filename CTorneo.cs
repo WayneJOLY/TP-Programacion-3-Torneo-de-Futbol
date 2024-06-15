@@ -1,4 +1,4 @@
-﻿using CTORNEO_FUTBOL;
+﻿
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -6,7 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace TorneoDeFutbol
+namespace CTORNEO_FUTBOL
 {
     public class CTorneo
     {
@@ -20,7 +20,7 @@ namespace TorneoDeFutbol
             ListaEquipos = new ArrayList();
             ListaEntrenadores = new ArrayList();
         }
-
+        
         public CJugador BuscarJugador (string dni)
         {
             foreach (CJugador jug in ListaJugadores)
@@ -40,6 +40,8 @@ namespace TorneoDeFutbol
             }
             else return false;
         }
+
+        public bool JugadorAEquipo () { }
 
         public CEquipo BuscarEquipo (string id)
         {
@@ -81,7 +83,8 @@ namespace TorneoDeFutbol
             }
             else  return false; 
         }
-    
+        
+        public bool pepito (CTorneo tipo)
     
     
     
