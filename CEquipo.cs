@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using TorneoDeFutbol;
+
 
 namespace CTORNEO_FUTBOL
 {
@@ -41,5 +41,7 @@ namespace CTORNEO_FUTBOL
             // Falta datos Clase CEntrenador
             return datos;
         }
+        
+        
     }
 }
