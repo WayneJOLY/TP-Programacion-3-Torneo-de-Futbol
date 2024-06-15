@@ -16,7 +16,7 @@ namespace CTORNEO_FUTBOL
         private ArrayList ListaJugadores;
         private CEntrenador entrenador;
 
-        public CEquipo(string nombre, string codigo, LinkedList<string> colores)
+        public CEquipo(string nombre, string codigo, ArrayList colores)
         {
             this.nombre = nombre;
             this.codigo = codigo;
