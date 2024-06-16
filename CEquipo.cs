@@ -16,11 +16,12 @@ namespace CTORNEO_FUTBOL
         private ArrayList ListaJugadores;
         private CEntrenador entrenador;
 
-        public CEquipo(string nombre, string codigo, ArrayList colores)
+        public CEquipo(string nombre, string codigo, ArrayList colores, CEntrenador entrenador)
         {
             this.nombre = nombre;
             this.codigo = codigo;
             this.colores = new ArrayList();
+            this.entrenador = entrenador;
         }
 
         public string GetCodigo()
@@ -38,6 +39,7 @@ namespace CTORNEO_FUTBOL
             string datos = "Codigo Equipo: " + this.codigo;
             datos += "-" + this.nombre;
             datos += "-" + this.colores;
+            datos += "-" + this.entrenador;
             // Falta datos Clase CEntrenador
             return datos;
         }
