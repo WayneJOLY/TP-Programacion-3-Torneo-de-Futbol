@@ -85,19 +85,33 @@ namespace CTORNEO_FUTBOL
         }
         
         public bool pepito (CTorneo tipo)
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+
+
+
+
+        public bool AgregarJugadorAEquipo(string dniJugador, string codigoEquipo)
+        {
+            CJugador jugador = BuscarJugador(dniJugador);
+            CEquipo equipo = BuscarEquipo(codigoEquipo);
+
+            if (jugador != null && equipo != null && !jugador.Esta_en_un_Equipo)
+            {
+                jugador.Esta_en_un_Equipo=true;
+                equipo.AgregarJugador(jugador);
+                return true;
+            }
+            return false;
+        }
     }
+
+
+
+
+
+
+
+
+}
 
     
 
