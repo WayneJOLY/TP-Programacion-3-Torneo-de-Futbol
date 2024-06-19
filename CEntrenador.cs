@@ -9,10 +9,9 @@ namespace CTORNEO_FUTBOL
 {
     public class CEntrenador
     {
-        private uint dni, telefono;
-        private string apellido, nombre;
+        private string apellido, nombre, dni, telefono;;
 
-        public CEntrenador(uint dni, uint telefono, string apellido, string nombre)
+        public CEntrenador(string apellido, string nombre, string dni, string telefono)
         {
             this.dni = dni;
             this.telefono = telefono;

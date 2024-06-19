@@ -1,8 +1,10 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+
 
 namespace CTORNEO_FUTBOL
 {
@@ -19,9 +21,9 @@ namespace CTORNEO_FUTBOL
             Console.WriteLine("**********************************************************");
             Console.WriteLine("*                Sistema de Gestión del Torneo            *");
             Console.WriteLine("***********************************************");
-            Console.WriteLine("\n[A]     Registrar jugador.");
+            Console.WriteLine("\n[A]     Registrar Jugador.");
             Console.WriteLine("\n[B]     Listar datos de todos los jugadores del torneo.");
-            Console.WriteLine("\n[C]     Registrar los equipos del torneo.");
+            Console.WriteLine("\n[C]     Registrar Equipo");
             Console.WriteLine("\n[D]     Listar datos completos de un equipo.");
             Console.WriteLine("\n[E]     Asignar jugador a un equipo");
             Console.WriteLine("\n[F]     Listar Jugadores de un equipo");
