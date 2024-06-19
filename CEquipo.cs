@@ -44,6 +44,7 @@ namespace CTORNEO_FUTBOL
             return datos;
         }
 
+
         public CJugador BuscarJugador(string dni)
         {
             foreach (CJugador jug in ListaJugadores)
@@ -85,6 +86,7 @@ namespace CTORNEO_FUTBOL
             return false;
         }
 
+
         public int GetCantidadDeJugadores()// Regresar la cantida de Jugadores del equipo
         {
             return ListaJugadores.Count;
@@ -92,9 +94,15 @@ namespace CTORNEO_FUTBOL
 
         public bool TieneArquero()
         {
+
             foreach (CJugador jugador in ListaJugadores)
             {
                 if (jugador.GetPosicion() == "Arquero")
+
+            foreach( CJugador jugador  in ListaJugadores )
+            {
+                if( jugador.GetPosicion()=="Arquero")
+
                 {
                     return true;
                 }
@@ -102,5 +110,10 @@ namespace CTORNEO_FUTBOL
                 return false;
             }
 
+
         }
+
+        }
+    }
+
 }
