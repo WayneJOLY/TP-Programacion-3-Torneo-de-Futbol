@@ -111,7 +111,7 @@ namespace CTORNEO_FUTBOL
  
         public bool ElEquipoPuedeParticipar(CEquipo equipo)// Averiguar que el equipo es apto para participar
         {
-            if (equipo.GetCantidadDeJugadores>=11 && equipo.GetCantidadDeJugadores <= 23 && equipo.TieneArquero())
+            if (equipo.GetCantidadDeJugadores()>=11 && equipo.GetCantidadDeJugadores()<= 23 && equipo.TieneArquero())
             {
                 return true;
             }

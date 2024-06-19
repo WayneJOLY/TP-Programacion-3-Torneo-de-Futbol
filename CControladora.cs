@@ -13,9 +13,8 @@ namespace CTORNEO_FUTBOL
         static void Main()
         {
             char OPCION;
-            OPCION = CInterfaz.DarOpcion();
             CTorneo torneo = new CTorneo();
-
+            char.TryParse(CInterfaz.DarOpcion().ToUpper(), out OPCION);
             switch (OPCION) 
             {
                 case 'A':
@@ -31,7 +30,7 @@ namespace CTORNEO_FUTBOL
                     }
                     break;
                 case 'C':
-                    string NOM = CInterfaz.PedirDato("Ingrese el Nombre del Equipo: ");
+                    NOM = CInterfaz.PedirDato("Ingrese el Nombre del Equipo: ");
                     string ID = CInterfaz.PedirDato("Ingrese el Codigo Identificador: ");
                     string COL = CInterfaz.PedirDato("Ingrese el o los colores del equipo: ");
                     if (torneo.BuscarEquipo(ID) == null) 
@@ -41,15 +40,15 @@ namespace CTORNEO_FUTBOL
                     }
                     break;
                 case 'E':
-                    string ID = CInterfaz.PedirDato("Ingrese el codigo del equipo: ");
-                    string DNI = CInterfaz.PedirDato("Ingrese el DNI del jugador: ");
+                    ID = CInterfaz.PedirDato("Ingrese el codigo del equipo: ");
+                    DNI = CInterfaz.PedirDato("Ingrese el DNI del jugador: ");
                     if (torneo.AgregarJugadorAEquipo(DNI, ID)) Console.WriteLine("Jugador asociado a Equipo correctamente");
                     else Console.WriteLine("El jugador no se ha podido asociar");
                     break;
                 case 'G':
-                    string APE = CInterfaz.PedirDato("Ingrese el Apellido: ");
-                    string NOM = CInterfaz.PedirDato("Ingrese el Nombre: ");
-                    string DNI = CInterfaz.PedirDato("Ingrese el DNI: ");
+                    APE = CInterfaz.PedirDato("Ingrese el Apellido: ");
+                    NOM = CInterfaz.PedirDato("Ingrese el Nombre: ");
+                    DNI = CInterfaz.PedirDato("Ingrese el DNI: ");
                     string TEL = CInterfaz.PedirDato("Ingrese el numero de telefono: ");
                     if (torneo.BuscarEntrenador(DNI) == null) 
                     { 

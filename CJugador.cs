@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace CTORNEO_FUTBOL
 {
-    public class CJugador
+    public class CJugador : CPersona
     {
 
         //Atributos Variables miembro
@@ -18,7 +18,7 @@ namespace CTORNEO_FUTBOL
         private DateTime fecha_nac;
         public bool Esta_en_un_Equipo;// Averiguar si el Jugador ya pertenece a un equipo
         //Constructor
-        public CJugador(string ape , string nom , string pos , string dni , DateTime fecha_nac )
+        public CJugador(string ape , string nom , string pos , string dni , DateTime fecha_nac ) : base( ape, nom, dni )
         {
             this.ape = ape;
             this.nom = nom;

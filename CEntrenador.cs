@@ -19,11 +19,11 @@ namespace CTORNEO_FUTBOL
             this.nombre = nombre;
         }
 
-        public uint GetDni()
+        public string GetDni()
         {
             return this.dni;
         }
-        public uint GetTelefono()
+        public string GetTelefono()
         {
             return this.telefono;
         }

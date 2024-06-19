@@ -20,7 +20,8 @@ namespace CTORNEO_FUTBOL
         {
             this.nombre = nombre;
             this.codigo = codigo;
-            this.colores = new ArrayList();
+            this.colores = colores;
+            ListaJugadores = new ArrayList();
         }
 
         public string GetCodigo()
@@ -29,7 +30,7 @@ namespace CTORNEO_FUTBOL
         public string GetNombre()
         { return this.nombre; }
 
-        public ArrayList GetColores()
+        public string GetColores()
         { return this.colores; }
 
         // Metodo DarDatos
@@ -59,12 +60,12 @@ namespace CTORNEO_FUTBOL
             CJugador aux = this.BuscarJugador(jugador.GetDni());
             if (aux == null)
             {
-                this.ListaJugadores.add(jugador);
+                this.ListaJugadores.Add(jugador);
                 return true;
-            }   
+            }
             return false;
         }
-            
+
         public bool SacarJugador(string dni)
         {
             if (this.BuscarJugador(dni) != null)
@@ -73,7 +74,7 @@ namespace CTORNEO_FUTBOL
                 {
                     if (aux.GetDni() == dni)
                     {
-                        this.listaJugadores.Remove(aux);
+                        this.ListaJugadores.Remove(aux);
                         return true;
                     }
                 }
@@ -95,13 +96,11 @@ namespace CTORNEO_FUTBOL
                 {
                     return true;
                 }
-                return false;
             }
-
-
+            return false;
         }
-       
-        }
+
     }
+}
 
 
