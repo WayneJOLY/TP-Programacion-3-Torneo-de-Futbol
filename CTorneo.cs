@@ -109,8 +109,7 @@ namespace CTORNEO_FUTBOL
             }
             return false;
         }
-
-        
+ 
         public bool ElEquipoPuedeParticipar(CEquipo equipo)// Averiguar que el equipo es apto para participar
         {
             if (equipo.GetCantidadDeJugadores>=11 && equipo.GetCantidadDeJugadores <= 23 && equipo.TieneArquero())
@@ -121,25 +120,7 @@ namespace CTORNEO_FUTBOL
             return false;
         }
     }
-
-    public bool ElEquipoPuedeParticipar(CEquipo equipo)// Averiguar que el equipo es apto para participar
-    {
-        if (equipo.GetCantidadDeJugadores >= 11 && equipo.GetCantidadDeJugadores <= 23 && equipo.TieneArquero())
-        {
-            return true;
-        }
-
-        return false;
-    }
-
-
-
-
-
-
-
-
-
+    
 }
 
 

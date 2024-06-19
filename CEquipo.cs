@@ -55,26 +55,22 @@ namespace CTORNEO_FUTBOL
             return null;
         }
 
-        public bool AgregarJugador (CJugador jugador) 
-        { 
-            CTorneo torneo = new CTorneo();
-            CJugador aux = torneo.BuscarJugador(jugador.GetDni());
-            if (aux != null) 
+        public bool AgregarJugador(CJugador jugador)
+        {
+            CJugador aux = this.BuscarJugador(jugador.GetDni());
+            if (aux == null)
             {
-                aux = " ";
-                aux = this.BuscarJugador(jugador.GetDni());
-                if (aux == null)
-                this.ListaJugadores.add(jugador); 
+                this.ListaJugadores.add(jugador);
                 return true;
-            }
+            }   
             return false;
         }
-
+            
         public bool SacarJugador(string dni)
         {
             if (this.BuscarJugador(dni) != null)
             {
-                foreach (CJugador aux in this.listaJugadores)
+                foreach (CJugador aux in this.ListaJugadores)
                 {
                     if (aux.GetDni() == dni)
                     {
@@ -94,19 +90,12 @@ namespace CTORNEO_FUTBOL
 
         public bool TieneArquero()
         {
-
             foreach (CJugador jugador in ListaJugadores)
             {
                 if (jugador.GetPosicion() == "Arquero")
-
-            foreach( CJugador jugador  in ListaJugadores )
-            {
-                if( jugador.GetPosicion()=="Arquero")
-
                 {
                     return true;
                 }
-
                 return false;
             }
 
@@ -116,4 +105,4 @@ namespace CTORNEO_FUTBOL
         }
     }
 
-}
+
