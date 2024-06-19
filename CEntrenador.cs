@@ -9,7 +9,7 @@ namespace CTORNEO_FUTBOL
 {
     public class CEntrenador
     {
-        private string apellido, nombre, dni, telefono;;
+        private string apellido, nombre, dni, telefono;
 
         public CEntrenador(string apellido, string nombre, string dni, string telefono)
         {
