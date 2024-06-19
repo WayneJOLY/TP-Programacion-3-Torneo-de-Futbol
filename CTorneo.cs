@@ -55,7 +55,7 @@ namespace CTORNEO_FUTBOL
         public bool AgregarEquipo (CEquipo equipo)
         {
             CEquipo aux = BuscarEquipo(equipo.GetCodigo());
-            if (aux == null) 
+            if (aux == null ) 
             { 
                 ListaEquipos.Add(equipo);
                 return true;
@@ -100,6 +100,17 @@ namespace CTORNEO_FUTBOL
                 equipo.AgregarJugador(jugador);
                 return true;
             }
+            return false;
+        }
+
+        
+        public bool ElEquipoPuedeParticipar(CEquipo equipo)// Averiguar que el equipo es apto para participar
+        {
+            if (equipo.GetCantidadDeJugadores>=11 && equipo.GetCantidadDeJugadores <= 23 && equipo.TieneArquero())
+            {
+                return true;
+            }
+
             return false;
         }
     }

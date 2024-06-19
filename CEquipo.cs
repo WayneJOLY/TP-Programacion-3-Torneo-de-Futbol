@@ -44,6 +44,22 @@ namespace CTORNEO_FUTBOL
             return datos;
         }
         
-        
+        public int GetCantidadDeJugadores()// Regresar la cantida de Jugadores del equipo
+        {
+            return ListaJugadores.Count;
+        }
+
+        public bool TieneArquero()
+        {
+            foreach( CJugador jugador  in ListaJugadores )
+            {
+                if( jugador.GetPosicion()=="Arquero")
+                {
+                    return true;
+                }
+
+                return false;
+            }
+        }
     }
 }
