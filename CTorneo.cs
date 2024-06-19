@@ -41,7 +41,19 @@ namespace CTORNEO_FUTBOL
             else return false;
         }
 
-        public bool JugadorAEquipo () { }
+        public bool RemoverJugador(string dni)
+        {
+            foreach (CEquipo aux in this.ListaEquipos)
+            {
+                if (aux.BuscarJugador(dni) != null)
+                {
+                    aux.SacarJugador(dni);
+                    this.ListaEquipos.Remove(aux);
+                    return true;
+                }
+            }
+            return false;
+        }
 
         public CEquipo BuscarEquipo (string id)
         {
@@ -83,11 +95,6 @@ namespace CTORNEO_FUTBOL
             }
             else  return false; 
         }
-        
-        public bool pepito (CTorneo tipo)
-
-
-
 
         public bool AgregarJugadorAEquipo(string dniJugador, string codigoEquipo)
         {
@@ -104,6 +111,17 @@ namespace CTORNEO_FUTBOL
         }
     }
 
+    public bool ElEquipoPuedeParticipar(CEquipo equipo)// Averiguar que el equipo es apto para participar
+    {
+        if (equipo.GetCantidadDeJugadores >= 11 && equipo.GetCantidadDeJugadores <= 23 && equipo.TieneArquero())
+        {
+            return true;
+        }
+
+        return false;
+    }
+
+
 
 
 
@@ -113,6 +131,6 @@ namespace CTORNEO_FUTBOL
 
 }
 
-    
 
-}
+
+

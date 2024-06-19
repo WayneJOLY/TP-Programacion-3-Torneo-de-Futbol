@@ -43,7 +43,64 @@ namespace CTORNEO_FUTBOL
             // Falta datos Clase CEntrenador
             return datos;
         }
-        
-        
-    }
+
+        public CJugador BuscarJugador(string dni)
+        {
+            foreach (CJugador jug in ListaJugadores)
+            {
+                if (jug.GetDni() == dni)
+                    return jug;
+            }
+            return null;
+        }
+
+        public bool AgregarJugador (CJugador jugador) 
+        { 
+            CTorneo torneo = new CTorneo();
+            CJugador aux = torneo.BuscarJugador(jugador.GetDni());
+            if (aux != null) 
+            {
+                aux = " ";
+                aux = this.BuscarJugador(jugador.GetDni());
+                if (aux == null)
+                this.ListaJugadores.add(jugador); 
+                return true;
+            }
+            return false;
+        }
+
+        public bool SacarJugador(string dni)
+        {
+            if (this.BuscarJugador(dni) != null)
+            {
+                foreach (CJugador aux in this.listaJugadores)
+                {
+                    if (aux.GetDni() == dni)
+                    {
+                        this.listaJugadores.Remove(aux);
+                        return true;
+                    }
+                }
+            }
+            return false;
+        }
+
+        public int GetCantidadDeJugadores()// Regresar la cantida de Jugadores del equipo
+        {
+            return ListaJugadores.Count;
+        }
+
+        public bool TieneArquero()
+        {
+            foreach (CJugador jugador in ListaJugadores)
+            {
+                if (jugador.GetPosicion() == "Arquero")
+                {
+                    return true;
+                }
+
+                return false;
+            }
+
+        }
 }
