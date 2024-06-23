@@ -29,9 +29,15 @@ namespace CTORNEO_FUTBOL
                         string POS = CInterfaz.PedirDato("Ingrese la posicion: ");
                         if (torneo.BuscarJugador(DNI) == null)
                         {
-                            CJugador jugador = new CJugador(APE, NOM, DNI, POS, NAC);
+                            CJugador jugador = new CJugador(APE, NOM, DNI, POS,NAC);
                             torneo.AgregarJugador(jugador);
                         }
+                        break;
+
+                    case 'B':
+
+                        Console.WriteLine("Lista de Jugadores de Torneo :{0}", torneo.ListaDeJugadores());
+
                         break;
                     case 'C':
                         NOM = CInterfaz.PedirDato("Ingrese el Nombre del Equipo: ");
