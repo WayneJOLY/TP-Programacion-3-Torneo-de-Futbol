@@ -115,16 +115,27 @@ namespace CTORNEO_FUTBOL
             {
                 return true;
             }
-
             return false;
         }
-        public string ListarEquipos()
+        public string ListarEquipos() // REGRESA LA LISTA DE EQUIPOS DE TORNEO
         {
             string datos = "";
             foreach (CEquipo equipo in ListaEquipos)
             {
                 datos += equipo.ToString();
             }
+            return datos;
+        }
+
+        public string ListaDeJugadores()// REGRESA LA LISTA DE LOS JUGADORES DE TORNEO
+        {
+            string datos = "";
+
+            foreach(CJugador jugador in ListaJugadores)
+            {
+                datos += jugador.ToString();
+            }
+
             return datos;
         }
     }
