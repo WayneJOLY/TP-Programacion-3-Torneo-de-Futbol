@@ -99,7 +99,16 @@ namespace CTORNEO_FUTBOL
             }
             return false;
         }
-
+        public string ListarJugadores()
+        {
+            string datos = "";
+            ListaJugadores.Sort();
+            foreach (CJugador jugador in ListaJugadores)
+            {
+                datos += jugador.ToString();
+            }
+            return datos;
+        }
     }
 }
 

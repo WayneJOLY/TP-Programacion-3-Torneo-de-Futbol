@@ -21,9 +21,9 @@ namespace CTORNEO_FUTBOL
             this.dni = dni;
         }
 
-        public uint GetDni() { return this.dni; }
-        public string GetApellido() { return this.apellido; }
-        public string GetNombre() { return this.nombre; }
+        public string GetDni() { return this.dni; }
+        public string GetApellido() { return this.ape; }
+        public string GetNombre() { return this.nom; }
     }
 }
 

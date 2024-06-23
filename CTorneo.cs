@@ -118,6 +118,15 @@ namespace CTORNEO_FUTBOL
 
             return false;
         }
+        public string ListarEquipos()
+        {
+            string datos = "";
+            foreach (CEquipo equipo in ListaEquipos)
+            {
+                datos += equipo.ToString();
+            }
+            return datos;
+        }
     }
     
 }
