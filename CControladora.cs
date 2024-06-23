@@ -25,7 +25,7 @@ namespace CTORNEO_FUTBOL
                         string APE = CInterfaz.PedirDato("Ingrese el Apellido: ");
                         string NOM = CInterfaz.PedirDato("Ingrese el Nombre: ");
                         string DNI = CInterfaz.PedirDato("Ingrese el DNI: ");
-                        string NAC = CInterfaz.PedirDato("Ingrese la fecha de nacimiento: ");
+                        DateTime NAC = Convert.ToDateTime(CInterfaz.PedirDato("Ingrese la fecha de nacimiento: "));
                         string POS = CInterfaz.PedirDato("Ingrese la posicion: ");
                         if (torneo.BuscarJugador(DNI) == null)
                         {
