@@ -48,14 +48,15 @@ namespace CTORNEO_FUTBOL
         }
 
         //getters
-        public string GetApellido() { return this.ape; }
-        
-        public string GetNombre() { return this.nom; }
-      
+        /* public string GetApellido() { return this.ape; }
+
+         public string GetNombre() { return this.nom; }
+
+
+
+         public override string GetDni() { return this.dni; }*/
+
         public string GetPosicion() { return this.pos; }
-        
-        public string GetDni() { return this.dni; }
-       
         public DateTime GetFecha_nac() { return this.fecha_nac; }
        
     }
