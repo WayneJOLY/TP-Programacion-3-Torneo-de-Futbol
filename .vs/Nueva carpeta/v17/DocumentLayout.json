@@ -1,0 +1,157 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Valentin\\Desktop\\Nueva carpeta\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Valentin\\Desktop\\Nueva carpeta\\CInterfaz.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:CInterfaz.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Valentin\\Desktop\\Nueva carpeta\\CControladora.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:CControladora.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Valentin\\Desktop\\Nueva carpeta\\CEquipo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:CEquipo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Valentin\\Desktop\\Nueva carpeta\\CTorneo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:CTorneo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Valentin\\Desktop\\Nueva carpeta\\CPersona.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:CPersona.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Valentin\\Desktop\\Nueva carpeta\\CJugador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:CJugador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Valentin\\Desktop\\Nueva carpeta\\CEntrenador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:CEntrenador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Valentin\\Desktop\\Nueva carpeta\\Posiciones.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Posiciones.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "CEquipo.cs",
+              "DocumentMoniker": "C:\\Users\\Valentin\\Desktop\\Nueva carpeta\\CEquipo.cs",
+              "RelativeDocumentMoniker": "CEquipo.cs",
+              "ToolTip": "C:\\Users\\Valentin\\Desktop\\Nueva carpeta\\CEquipo.cs",
+              "RelativeToolTip": "CEquipo.cs",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAAABcAAAAtAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-23T22:19:45.367Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "CControladora.cs",
+              "DocumentMoniker": "C:\\Users\\Valentin\\Desktop\\Nueva carpeta\\CControladora.cs",
+              "RelativeDocumentMoniker": "CControladora.cs",
+              "ToolTip": "C:\\Users\\Valentin\\Desktop\\Nueva carpeta\\CControladora.cs",
+              "RelativeToolTip": "CControladora.cs",
+              "ViewState": "AQIAACYAAAAAAAAAAAAAAEkAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-23T22:19:05.859Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "CInterfaz.cs",
+              "DocumentMoniker": "C:\\Users\\Valentin\\Desktop\\Nueva carpeta\\CInterfaz.cs",
+              "RelativeDocumentMoniker": "CInterfaz.cs",
+              "ToolTip": "C:\\Users\\Valentin\\Desktop\\Nueva carpeta\\CInterfaz.cs",
+              "RelativeToolTip": "CInterfaz.cs",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAAAB4AAABHAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-23T22:19:46.894Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "CTorneo.cs",
+              "DocumentMoniker": "C:\\Users\\Valentin\\Desktop\\Nueva carpeta\\CTorneo.cs",
+              "RelativeDocumentMoniker": "CTorneo.cs",
+              "ToolTip": "C:\\Users\\Valentin\\Desktop\\Nueva carpeta\\CTorneo.cs",
+              "RelativeToolTip": "CTorneo.cs",
+              "ViewState": "AQIAABgAAAAAAAAAAAAAAIwAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-23T22:19:49.124Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "CPersona.cs",
+              "DocumentMoniker": "C:\\Users\\Valentin\\Desktop\\Nueva carpeta\\CPersona.cs",
+              "RelativeDocumentMoniker": "CPersona.cs",
+              "ToolTip": "C:\\Users\\Valentin\\Desktop\\Nueva carpeta\\CPersona.cs",
+              "RelativeToolTip": "CPersona.cs",
+              "ViewState": "AQIAAAsAAAAAAAAAAAAUwBoAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-23T22:19:48.418Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "CJugador.cs",
+              "DocumentMoniker": "C:\\Users\\Valentin\\Desktop\\Nueva carpeta\\CJugador.cs",
+              "RelativeDocumentMoniker": "CJugador.cs",
+              "ToolTip": "C:\\Users\\Valentin\\Desktop\\Nueva carpeta\\CJugador.cs",
+              "RelativeToolTip": "CJugador.cs",
+              "ViewState": "AQIAACMAAAAAAAAAAAAAADwAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-23T22:19:47.754Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "CEntrenador.cs",
+              "DocumentMoniker": "C:\\Users\\Valentin\\Desktop\\Nueva carpeta\\CEntrenador.cs",
+              "RelativeDocumentMoniker": "CEntrenador.cs",
+              "ToolTip": "C:\\Users\\Valentin\\Desktop\\Nueva carpeta\\CEntrenador.cs",
+              "RelativeToolTip": "CEntrenador.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAACwAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-23T22:19:13.433Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Posiciones.cs",
+              "DocumentMoniker": "C:\\Users\\Valentin\\Desktop\\Nueva carpeta\\Posiciones.cs",
+              "RelativeDocumentMoniker": "Posiciones.cs",
+              "ToolTip": "C:\\Users\\Valentin\\Desktop\\Nueva carpeta\\Posiciones.cs",
+              "RelativeToolTip": "Posiciones.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-23T22:19:52.234Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
