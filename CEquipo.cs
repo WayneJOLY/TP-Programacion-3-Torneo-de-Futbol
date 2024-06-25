@@ -15,13 +15,13 @@ namespace CTORNEO_FUTBOL
         private string colores;
         private ArrayList ListaJugadores;
         private CEntrenador entrenador;
-
+        
         public CEquipo(string nombre, string codigo, string colores)
         {
             this.nombre = nombre;
             this.codigo = codigo;
             this.colores = colores;
-            ListaJugadores = new ArrayList();
+            ListaJugadores = new ArrayList(23);
         }
 
         public string GetCodigo()
@@ -33,14 +33,14 @@ namespace CTORNEO_FUTBOL
         public string GetColores()
         { return this.colores; }
 
+        public void SetEntrenador(CEntrenador ent) { this.entrenador = ent; }
         // Metodo DarDatos
-        public string DarDatos()
+        public override string ToString()
         {
             string datos = "Codigo Equipo: " + this.codigo;
-            datos += "-" + this.nombre;
-            datos += "-" + this.colores;
-            datos += "-" + this.entrenador;
-            // Falta datos Clase CEntrenador
+            datos += " - " + this.nombre;
+            datos += " - " + this.colores;
+            datos += " \nEntrenador: \n" + this.entrenador.ToString();
             return datos;
         }
 
@@ -58,9 +58,10 @@ namespace CTORNEO_FUTBOL
         public bool AgregarJugador(CJugador jugador)
         {
             CJugador aux = this.BuscarJugador(jugador.GetDni());
-            if (aux == null)
+            if (aux == null && jugador.Esta_en_un_Equipo == false)
             {
                 this.ListaJugadores.Add(jugador);
+                jugador.SetEstaEquipo();
                 return true;
             }
             return false;
@@ -85,14 +86,14 @@ namespace CTORNEO_FUTBOL
 
         public int GetCantidadDeJugadores()// Regresar la cantida de Jugadores del equipo
         {
-            return ListaJugadores.Count;
+            return this.ListaJugadores.Count;
         }
 
         public bool TieneArquero()
         {
             foreach (CJugador jugador in ListaJugadores)
             {
-                if (jugador.GetPosicion() == "Arquero")
+                if (jugador.GetPosicion() == Posiciones.Arquero)
                 {
                     return true;
                 }
@@ -101,8 +102,8 @@ namespace CTORNEO_FUTBOL
         }
         public string ListarJugadores()
         {
-            string datos = "";
-            ListaJugadores.Sort();
+            string datos = "Lista de jugadores: \n\n";
+            this.ListaJugadores.Sort();
             foreach (CJugador jugador in ListaJugadores)
             {
                 datos += jugador.ToString();

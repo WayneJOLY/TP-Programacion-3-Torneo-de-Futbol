@@ -13,24 +13,22 @@ namespace CTORNEO_FUTBOL
         //Atributos Variables miembro
         private string ape;
         private string nom;
-        private string pos;
+        private Posiciones pos;
         private string dni;
         private DateTime fecha_nac;
         public bool Esta_en_un_Equipo;// Averiguar si el Jugador ya pertenece a un equipo
         //Constructor
-        public CJugador(string ape , string nom , string pos , string dni , DateTime fecha_nac ) : base( ape, nom, dni )
+        public CJugador(string ape , string nom , Posiciones pos , string dni , DateTime fecha_nac ) : base( ape, nom, dni )
         {
-            this.ape = ape;
-            this.nom = nom;
             this.pos = pos;
-            this.dni = dni;
             this.fecha_nac = fecha_nac;
         }
         
         // Metodos
-        public string DarDatos()
+        public override string ToString()
         {
-            string datos = $"\nApellido: {this.ape}\nNombre: {this.nom}\nPosicion: {this.pos} \nDNI: {this.dni}\nFecha de nacimiento: {this.fecha_nac.ToShortDateString()}\n";
+            string datos = base.ToString();
+            datos += "\nPosicion: " + this.pos + "\nFecha nacimiento: " + this.fecha_nac;
             return datos;
         }
 
@@ -48,17 +46,9 @@ namespace CTORNEO_FUTBOL
         }
 
         //getters
-        /* public string GetApellido() { return this.ape; }
-
-         public string GetNombre() { return this.nom; }
-
-
-
-         public override string GetDni() { return this.dni; }*/
-
-        public string GetPosicion() { return this.pos; }
+        public Posiciones GetPosicion() { return this.pos; }
         public DateTime GetFecha_nac() { return this.fecha_nac; }
-       
+        public void SetEstaEquipo() { this.Esta_en_un_Equipo = true; }
     }
 
 }

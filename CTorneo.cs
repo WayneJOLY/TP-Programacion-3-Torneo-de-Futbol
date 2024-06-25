@@ -46,8 +46,8 @@ namespace CTORNEO_FUTBOL
             {
                 if (aux.BuscarJugador(dni) != null)
                 {
+                    this.ListaJugadores.Remove(aux.BuscarJugador(dni));
                     aux.SacarJugador(dni);
-                    this.ListaEquipos.Remove(aux);
                     return true;
                 }
             }
@@ -97,12 +97,12 @@ namespace CTORNEO_FUTBOL
 
         public bool AgregarJugadorAEquipo(string dniJugador, string codigoEquipo)
         {
+
             CJugador jugador = BuscarJugador(dniJugador);
             CEquipo equipo = BuscarEquipo(codigoEquipo);
 
-            if (jugador != null && equipo != null && !jugador.Esta_en_un_Equipo)
+            if (jugador != null && equipo != null && !jugador.Esta_en_un_Equipo && jugador.CalcularEdad())
             {
-                jugador.Esta_en_un_Equipo=true;
                 equipo.AgregarJugador(jugador);
                 return true;
             }
@@ -111,7 +111,7 @@ namespace CTORNEO_FUTBOL
  
         public bool ElEquipoPuedeParticipar(CEquipo equipo)// Averiguar que el equipo es apto para participar
         {
-            if (equipo.GetCantidadDeJugadores()>=11 && equipo.GetCantidadDeJugadores()<= 23 && equipo.TieneArquero())
+            if ((equipo.GetCantidadDeJugadores() >= 11) && (equipo.GetCantidadDeJugadores() <= 23) && (equipo.TieneArquero()))
             {
                 return true;
             }
@@ -119,24 +119,72 @@ namespace CTORNEO_FUTBOL
         }
         public string ListarEquipos() // REGRESA LA LISTA DE EQUIPOS DE TORNEO
         {
-            string datos = "";
+            string datos = "Equipos: \n\n";
             foreach (CEquipo equipo in ListaEquipos)
             {
                 datos += equipo.ToString();
             }
             return datos;
         }
+        public string ListarEquiposAptos() // REGRESA LA LISTA DE EQUIPOS DE TORNEO
+        {
+            string datos = "Equipos aptos: \n\n";
+            foreach (CEquipo equipo in ListaEquipos)
+            {
+                if (ElEquipoPuedeParticipar(equipo))
+                {
+                    datos += equipo.ToString();
+                }
+                else {
+                    datos += "El equipo: " + equipo.GetNombre() + " no esta apto para participar el torneo\n";
+                }
+            }
+            return datos;
+        }
 
         public string ListaDeJugadores()// REGRESA LA LISTA DE LOS JUGADORES DE TORNEO
         {
-            string datos = "";
+            string datos = "JUGADORES: \n\n";
 
             foreach(CJugador jugador in ListaJugadores)
             {
                 datos += jugador.ToString();
+                foreach (CEquipo equipo in ListaEquipos)
+                {
+                    if(BuscarJugador(jugador.GetDni()) != null)
+                    {
+                        datos += "\nEquipo: " + equipo.GetNombre();
+                    }
+                }
             }
 
             return datos;
+        }
+        public string ListaDeEntrenadores()
+        {
+            string datos = "ENTRENADORES \n\n";
+
+            foreach (CEntrenador entrenador in ListaEntrenadores)
+            {
+                datos += entrenador.ToString();
+                foreach (CEquipo equipo in ListaEquipos)
+                {
+                    if (BuscarEntrenador(entrenador.GetDni()) != null)
+                    {
+                        datos += "\nEquipo: " + equipo.GetNombre();
+                    }
+                }
+            }
+
+            return datos;
+        }
+        public int GetCantidadDeEntrenadores()// Regresar la cantida de Jugadores del equipo
+        {
+            return this.ListaEntrenadores.Count;
+        }
+        public void OrdenarJugadores()
+        {
+            this.ListaJugadores.Sort();
         }
     }
     

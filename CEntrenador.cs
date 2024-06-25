@@ -7,39 +7,22 @@ using System.Threading.Tasks;
 
 namespace CTORNEO_FUTBOL
 {
-    public class CEntrenador
+    public class CEntrenador : CPersona
     {
         private string apellido, nombre, dni, telefono;
 
-        public CEntrenador(string apellido, string nombre, string dni, string telefono)
+        public CEntrenador(string apellido, string nombre, string dni, string telefono): base (apellido, nombre, dni)
         {
-            this.dni = dni;
             this.telefono = telefono;
-            this.apellido = apellido;
-            this.nombre = nombre;
-        }
-
-        public string GetDni()
-        {
-            return this.dni;
         }
         public string GetTelefono()
         {
             return this.telefono;
         }
-        public string GetApellido()
+        public override string ToString()
         {
-            return this.apellido;
-        }
-        public string GetNombre()
-        {
-            return this.nombre;
-        }
-
-        public string DarDatos()
-        {
-            string datos = "Jugador de DNI: " + this.dni.ToString();
-            datos = datos + "-" + this.telefono.ToString() + "-" + this.apellido + "-" + this.nombre;
+            string datos = base.ToString();
+            datos += "\nTelefono: " + this.telefono;
             return datos;
         }
 

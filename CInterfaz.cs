@@ -20,17 +20,16 @@ namespace CTORNEO_FUTBOL
             Console.Clear();
             Console.WriteLine("**********************************************************");
             Console.WriteLine("*                Sistema de Gestión del Torneo            *");
-            Console.WriteLine("***********************************************");
-            Console.WriteLine("\n[A]     Registrar Jugador.");
-            Console.WriteLine("\n[B]     Listar datos de todos los jugadores del torneo.");
-            Console.WriteLine("\n[C]     Registrar Equipo");
-            Console.WriteLine("\n[D]     Listar datos completos de un equipo.");
-            Console.WriteLine("\n[E]     Asignar jugador a un equipo");
-            Console.WriteLine("\n[F]     Listar Jugadores de un equipo");
-            Console.WriteLine("\n[G]     Registrar Entrenador");
-            Console.WriteLine("\n[H]     Asignar Entrenador a Equipo");
-            Console.WriteLine("\n[I]     Ver todos los datos de un equipo");
-            Console.WriteLine("\n[J]     Eliminar un jugador del torneo");
+            Console.WriteLine("**********************************************************");
+            Console.WriteLine("\n[A]     Registrar Jugador"); // LISTO 
+            Console.WriteLine("\n[B]     Registrar Entrenador"); // LISTO
+            Console.WriteLine("\n[C]     Registrar Equipo"); // LISTO
+            Console.WriteLine("\n[D]     Asociar jugador a un equipo."); // LISTO
+            Console.WriteLine("\n[E]     Listar Equipos"); // LISTO
+            Console.WriteLine("\n[F]     Listar jugadores de un equipo"); // LISTO
+            Console.WriteLine("\n[G]     Expulsar jugador"); // LISTO
+            Console.WriteLine("\n[H]     Listar todos los participantes del torneo"); // LISTO
+            Console.WriteLine("\n[I]     Verificar si los equipos estan aptos para jugar el torneo"); // LISTO
             Console.WriteLine("\n[S]     Salir de la aplicación.");
             Console.WriteLine("\n********************************************************");
             return CInterfaz.PedirDato("opción elegida");
